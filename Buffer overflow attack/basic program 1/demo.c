@@ -26,7 +26,7 @@ int main(int argc, char **argv)
 
 {
 
-	char str[300];
+	char str[400];
 
 	FILE *badfile;
 
