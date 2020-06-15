@@ -1,0 +1,7 @@
+gdb-peda$ p $ebp
+$1 = (void *) 0xbfffeb78
+gdb-peda$ p &buffer
+$2 = (char (*)[100]) 0xbfffeb04
+gdb-peda$ p/d 0xbfffeb78 - 0xbfffeb04
+$3 = 116
+
