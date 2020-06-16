@@ -7,9 +7,9 @@ while [ 1 ]
     do
     value=$(( $value + 1))
     duration=$SECONDS
-    min= $(( $duration / 60))
-    sec= $(( $duration % 60))
-    echo "$min minutes and $sec seconds elapsed."
-    echo "the program has been running $value times so far"
+    mins=$(($duration/60))
+    secs=$(($duration%60))
+    echo " $mins minutes and $secs seconds elapsed."
+    echo " the program has been running $value times so far"
     ./demo
 done
